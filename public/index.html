@@ -4,17 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Compra con Descuento</h1>
-    <form id="checkout-form">
-        <input type="email" id="email" placeholder="Tu correo" required /><br />
-        <input type="text" id="coupon" placeholder="Código de descuento" /><br />
-        <button type="submit">Pagar</button>
-    </form>
-    <p id="message"></p>
+    <img src="./media/MP_RGB_HANDSHAKE_color-azul_hori-izq.svg" alt="logo de mercadopago" class="logo">
+
+    <div class="payment_container">
+        <div class="wrapper">
+            <h1>Detalles del pago</h1>
+            <p>
+                Precio base: $1000
+            </p>
+            <p>
+                Si tienes un cupón ingresalo para obtener un descuento
+            </p>
+            <hr>
+
+            <form id="checkout-form">
+                <input type="email" id="email" placeholder="Tu correo" required />
+                <input type="text" id="coupon" placeholder="Código de descuento" />
+                <button type="submit">Proceder al pago</button>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>

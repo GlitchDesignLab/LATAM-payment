@@ -16,6 +16,6 @@ document
       window.location.href = data.init_point;
     } else {
       document.getElementById("message").innerText =
-        data.error || "Error al procesar";
+        data.error || "Payment failed";
     }
   });
